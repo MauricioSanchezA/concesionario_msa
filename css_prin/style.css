@@ -1,0 +1,354 @@
+@import "https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+/*____________________index_ser___________________________*/
+
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin: 5px 12px;
+  top: 2px 3px;
+}
+.contenedor .texto_1{
+  background-color: rgba(0, 0, 0, 0.9);
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: justify;
+  height: 99%;
+  color:#fff;
+  padding: 20px 10px;
+  
+}
+.texto_1 h3{
+  text-align: center;
+  font-size: 25px;
+  border-bottom: 1px solid #808080;
+  padding: 20px 10px;
+  overflow: hidden;
+}
+
+.texto_1 p{
+  padding: 20px 20px 15px 20px;
+  border-bottom: 1px solid #808080;
+}
+
+.icons{
+  background-color: transparent;
+  color:#fff;
+  font-size: 28px;
+  padding: 0 0 10px 25px;
+  position: absolute;
+  margin: 30px;
+}
+
+.icons i{
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 1s;
+  bottom: 0%;
+}
+
+.icons .face i:hover{
+  color:rgb(5, 129, 231);
+  bottom: -100%;
+  -webkit-transform:scale(1.9);transform:scale(1.9);
+  transition: all 0.5s;
+  opacity: 95%;
+}
+
+.icons .inst i:hover{
+  color:rgb(231, 5, 182);
+  bottom: -100%;
+  -webkit-transform:scale(1.9);transform:scale(1.9);
+  transition: all 0.5s;
+  opacity: 95%;
+}
+
+.icons .what i:hover{
+  color:rgb(7, 220, 50);
+  bottom: -100%;
+  -webkit-transform:scale(1.9);transform:scale(1.9);
+  transition: all 0.5s;
+  opacity: 95%;
+}
+
+.icons .you i:hover{
+  color:rgb(220, 7, 7);
+  bottom: -100%;
+  -webkit-transform:scale(1.9);transform:scale(1.9);
+  transition: all 0.5s;
+  opacity: 95%;
+}
+
+.contenedor:hover img {
+  -webkit-transform:scale(1.2);transform:scale(1.2);
+  transition: all 1s;
+  /*opacity: 20%;*/
+  cursor: pointer;
+  top:-100%;
+  z-index: 1000;
+}
+
+.contenedor:hover icons {
+  bottom: 0%;
+}
+
+.contenedor .texto_1:hover {
+  -webkit-transform:scale(0.0);transform:scale(0.0);
+  transition: all 3s;
+  opacity: 15%;
+  top: 0;
+}
+
+/*____________________index_bib___________________________*/
+
+a.boton_1{
+  color: #ff4000;
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.5;
+  text-decoration: none;
+  box-shadow: inset 0 0 0 0 rgb(255, 21, 0);
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+a.boton_1:hover {
+  color: #fff;
+  box-shadow: inset 200px 0 0 0 #37ff00;
+}
+
+/*____________________ index imagen circulo ___________________________*/
+/*
+.avatar img{*/
+  /* cambia estos dos valores para definir el tamaño del círculo */
+ /* height: 100px;
+  width: 100px;*/
+  /* los siguientes valores son independientes del tamaño del círculo */
+ /* background-repeat: no-repeat;
+  background-position: 50%;
+  border-radius: 50%;
+  background-size: 100% auto;
+}*/
+/*____________________ index ___________________________*/
+
+section {
+  background: #111;
+  min-height: 100vh;
+}
+section .bannerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 50%;
+}
+section .bannerVideo video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0;
+}
+section .bannerVideo video.active {
+  opacity: 1;
+}
+section .container {
+  position: relative;
+  padding: 0 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 100vh;
+}
+section .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.05);
+}
+section .container header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 100px;
+}
+section .container header .logo {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 1.8em;
+  text-decoration: none;
+}
+section .container header ul {
+  position: relative;
+  display: flex;
+}
+section .container header ul li {
+  list-style: none;
+  margin: 0 20px;
+}
+section .container header ul li a {
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 4px 10px;
+  color: #fff;
+}
+section .container header ul li a:hover {
+  background: #fff;
+  color: #111;
+}
+section .container header ul li a.active {
+  background: #39a900;
+  color: #111;
+}
+section .container header .menuIcon {
+  display: none;
+}
+section .container .content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+section .container .content .bannerText {
+  position: relative;
+  max-width: 700px;
+}
+section .container .content .bannerText div {
+  display: none;
+  transition: 0.5s ease-in-out;
+}
+section .container .content .bannerText div h2 {
+  color: #fff;
+  font-size: 6em;
+  line-height: 1em;
+  font-weight: 700;
+}
+section .container .content .bannerText div p {
+  color: #fff;
+  font-size: 18px;
+  margin: 20px 0;
+}
+section .container .content .bannerText div.active {
+  display: initial;
+}
+section .container .controls {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+}
+section .container .controls li {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  cursor: pointer;
+}
+section .container .controls li:hover {
+  background: #f5f5f5;
+}
+
+/*____________________ responsive ___________________________*/
+
+@media (max-width: 991px) {
+  section .container {
+    padding: 20px;
+  }
+  section .container:before {
+    width: 100%;
+  }
+  section .container header {
+    padding: 10px 20px;
+  }
+  section .container header ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  section .container header ul li {
+    text-align: center;
+    margin: 10px;
+  }
+  section .container header ul li a {
+    color: #333;
+    font-size: 1.5em;
+  }
+  section .container header ul li a:hover {
+    color: #f00;
+  }
+  section .container header .menuIcon {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    display: initial;
+    z-index: 10000;
+    background: #fff url(../img/menu.png);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+  }
+  section .container header .menuIcon.active {
+    background: #fff url(../img/close.png);
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  section .container header.active ul {
+    display: flex;
+  }
+  section .container .content .bannerText {
+    max-width: 100%;
+    text-align: center;
+  }
+  section .container .content .bannerText div h2 {
+    font-size: 3em;
+  }
+  section .container .controls li {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,72 @@
+<!-- Inicio del documento HTML -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+	<!-- Fuente de Google Fonts -->
+	<link rel="stylesheet" type="text/css" href="../css/stylelogin1.css"> <!-- Hoja de estilos -->
+	<title>APLICATIVO</title> <!-- Título de la página -->
+	<meta name="keyword" content="concesionario, autos, clientes"> <!-- Palabras clave -->
+	<meta name="keywords" content="html, css, automovil, carro, concesionario, taller">
+	<meta name="author" content="Mauricio Sanchez A"> <!-- Autor del documento -->
+	<link rel="stylesheet" href="css_1/stylelogin.css">
+	<link rel="shortcut icon" href="img/icono.jpg"> <!-- Icono de la página -->
+</head>
+
+<body>
+	<div class="align">
+		<video id="my-video" class="video" autoplay muted loop>
+			<source src="imagenes/porsche_-_28544 (540p).mp4" type="video/mp4">
+		</video>
+		<div class="card">
+			<div class="head">
+				<div></div>
+				<a id="login" class="selected" href="val.php">Iniciar sesion</a> <!-- Enlace para iniciar sesión -->
+				<a id="register" href="reg.html">Registrarse</a> <!-- Enlace para registrarse -->
+				<div></div>
+			</div>
+			<div class="tabs">
+				<form action="pag.html" method="POST">
+					<!-- Campos de entrada del formulario -->
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="Nombre de Usuario" type="text" name="nombre_usuario">
+							<img src="img/usuario.jpg">
+						</div>
+						<div class="input">
+							<input placeholder="Contraseña" type="password" name="contrasena">
+							<img src="img/contra.png">
+						</div>
+					</div>
+					<button type="submit">Iniciar sesión</button>
+				</form>
+
+
+				<form> <!-- Formulario de registro -->
+					<div class="inputs">
+						<div class="input">
+							<input placeholder="Correo Electronico" type="text">
+							<!-- Campo de entrada de correo electrónico -->
+							<img src="img/mail.svg"> <!-- Icono de correo electrónico -->
+						</div>
+						<div class="input">
+							<input placeholder="Nombre de Usuario" type="text">
+							<!-- Campo de entrada de nombre de usuario -->
+							<img src="img/user.svg"> <!-- Icono de usuario -->
+						</div>
+						<div class="input">
+							<input placeholder="Contraseña" type="password"> <!-- Campo de entrada de contraseña -->
+							<img src="img/pass.svg"> <!-- Icono de contraseña -->
+						</div>
+					</div>
+					<button>Register</button> <!-- Botón de registro -->
+				</form>
+			</div>
+		</div>
+	</div>
+	<script src="./script.js"></script>
+</body>
+
+</html>
