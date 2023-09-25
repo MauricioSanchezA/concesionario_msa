@@ -246,13 +246,13 @@ section .container .content .bannerText div {
   transition: 0.5s ease-in-out;
 }
 section .container .content .bannerText div h2 {
-  color: #fff;
+  color: #0000005e;
   font-size: 6em;
   line-height: 1em;
   font-weight: 700;
 }
 section .container .content .bannerText div p {
-  color: #fff;
+  color: #000;
   font-size: 18px;
   margin: 20px 0;
 }
