@@ -285,7 +285,7 @@ section .container .controls li:hover {
     padding: 20px;
   }
   section .container:before {
-    width: 100%;
+    width: 38%;
   }
   section .container header {
     padding: 10px 20px;
